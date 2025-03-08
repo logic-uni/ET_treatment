@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mpchart="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- X轴加速度图表 -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartX"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="4dp"
+        mpchart:descriptionEnabled="false"
+        mpchart:drawGridBackground="false"
+        mpchart:legendEnabled="false"/>
+
+    <!-- Y轴加速度图表 -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartY"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="4dp"
+        mpchart:descriptionEnabled="false"
+        mpchart:drawGridBackground="false"
+        mpchart:legendEnabled="false"/>
+
+    <!-- Z轴加速度图表 -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartZ"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        mpchart:descriptionEnabled="false"
+        mpchart:drawGridBackground="false"
+        mpchart:legendEnabled="false"/>
+
+</LinearLayout>

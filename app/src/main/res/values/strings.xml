@@ -1,0 +1,55 @@
+<resources>
+    <!-- 应用基础信息 -->
+    <string name="app_name">振动手环治疗系统</string>
+
+    <!-- 主界面 -->
+    <string name="title_activity_main">实时数据监控</string>
+    <string name="label_chart_x">X轴加速度 (m/s²)</string>
+    <string name="label_chart_y">Y轴加速度 (m/s²)</string>
+    <string name="label_chart_z">Z轴加速度 (m/s²)</string>
+    <string name="btn_connect_bluetooth">连接设备</string>
+    <string name="btn_stop_service">停止服务</string>
+
+    <!-- 蓝牙状态提示 -->
+    <string name="bluetooth_connecting">正在连接设备…</string>
+    <string name="bluetooth_connected">设备已连接</string>
+    <string name="bluetooth_disconnected">设备已断开</string>
+    <string name="bluetooth_scanning">正在搜索设备…</string>
+    <string name="bluetooth_failed">连接失败</string>
+
+    <!-- 通知相关 -->
+    <string name="notification_channel_name">数据采集服务</string>
+    <string name="notification_title">后台数据采集中</string>
+    <string name="notification_content">正在接收传感器数据并同步至云端</string>
+    <string name="notification_tap_resume">点击返回应用</string>
+
+    <!-- 权限提示 -->
+    <string name="permission_rationale_title">需要权限</string>
+    <string name="permission_rationale_message">
+        我们需要以下权限来保证功能正常运行：
+        - 蓝牙权限用于连接医疗设备
+        - 位置权限用于发现蓝牙设备
+        - 后台权限保持持续监测
+    </string>
+    <string name="permission_denied">部分功能可能无法正常使用</string>
+
+    <!-- 错误提示 -->
+    <string name="error_mqtt_connection">云端连接失败</string>
+    <string name="error_data_format">数据格式错误</string>
+    <string name="error_bluetooth_unsupported">设备不支持蓝牙</string>
+
+    <!-- 设置界面 -->
+    <string name="settings_title">治疗参数设置</string>
+    <string name="label_frequency">振动频率 (Hz)</string>
+    <string name="label_intensity">治疗强度</string>
+    <string name="hint_frequency">10-100 Hz</string>
+
+    <!-- 单位标签 -->
+    <string name="unit_hz">Hz</string>
+    <string name="unit_millisecond">ms</string>
+
+    <!-- 对话框 -->
+    <string name="dialog_confirm">确认</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_emergency_stop">紧急停止治疗？</string>
+</resources>
